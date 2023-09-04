@@ -8,6 +8,3 @@
 
 # Ignore test directories
 /src/test/
-
-# Ignore Maven specific file
-pom.xml
