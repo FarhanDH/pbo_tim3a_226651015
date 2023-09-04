@@ -1,0 +1,13 @@
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore compiled Java classes and target directories
+/target/
+/src/main/resources/
+*.class
+
+# Ignore test directories
+/src/test/
+
+# Ignore Maven specific files
+pom.xml
