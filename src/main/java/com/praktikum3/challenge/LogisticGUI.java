@@ -1,7 +1,4 @@
-package com.praktikum3.coba;
-
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
+package com.praktikum3.challenge;
 
 import javax.swing.JOptionPane;
 
@@ -30,19 +27,6 @@ public class LogisticGUI {
                 cost += 5000;
             }
         }
-
-        // create objek DecimalFormat with the appropriate pattern
-        DecimalFormat df = new DecimalFormat("#,###");
-
-        // Set the thousands separator symbol to a period
-        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
-        symbols.setGroupingSeparator('.');
-        df.setDecimalFormatSymbols(symbols);
-
-        // Convert integer to "100.000"
-        String formatRibuan = df.format(cost);
-
-        // display logistic delivery cost
-        JOptionPane.showMessageDialog(null, "biaya pengiriman logistik: Rp. " + formatRibuan);
+        JOptionPane.showMessageDialog(null, "biaya pengiriman logistik: Rp. " + cost);
     }
 }

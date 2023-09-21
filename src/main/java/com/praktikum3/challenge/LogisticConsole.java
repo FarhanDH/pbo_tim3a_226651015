@@ -1,10 +1,8 @@
-package com.praktikum3.coba;
+package com.praktikum3.challenge;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
 
 public class LogisticConsole {
     public static void main(String[] args) {
@@ -35,20 +33,7 @@ public class LogisticConsole {
                     cost += 5000;
                 }
             }
-
-            // create objek DecimalFormat with the appropriate pattern
-            DecimalFormat df = new DecimalFormat("#,###");
-
-            // Set the thousands separator symbol to a period
-            DecimalFormatSymbols symbols = new DecimalFormatSymbols();
-            symbols.setGroupingSeparator('.');
-            df.setDecimalFormatSymbols(symbols);
-
-            // Convert integer to "100.000"
-            String formatRibuan = df.format(cost);
-
-            // display logistic delivery cost
-            System.out.println("Biaya pengiriman logistik: Rp. " + formatRibuan);
+            System.out.println("Biaya pengiriman logistik: Rp. " + cost);
         } catch (IOException e) {
             System.out.println("Data tidak valid");
         }
