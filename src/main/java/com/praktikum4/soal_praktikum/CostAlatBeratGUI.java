@@ -14,13 +14,11 @@ public class CostAlatBeratGUI {
                 biayaSewa = 0,
                 totalHari = 0;
 
-        // TODO: Get data from user
         lokasi = JOptionPane.showInputDialog("MASUKKIN LOKASI PAMAKAIAANNN!!!").toLowerCase();
         jenisUnit = JOptionPane.showInputDialog("MASUKKIN JENISS UNITT!!!!").toLowerCase();
         jumlahJam = Integer.parseInt(JOptionPane.showInputDialog("MASUKKIN JUMLAH JAM PEMAKAAIAAANNNN!!!"));
         totalHari = Integer.parseInt(JOptionPane.showInputDialog("MASUKKIN TOTAL HARI PEMAKAAIAAANNNN!!!"));
 
-        // TODO: Validate based lokasi & jenisUnit
         if (lokasi.equals("samarinda")) {
             upahMakan += 50000;
             upahTransport += 25000;
@@ -53,15 +51,12 @@ public class CostAlatBeratGUI {
             }
         }
 
-        // TODO: Validate based jumlah jam
         if (jumlahJam <= 200) {
             jumlahJam = 200;
         }
 
-        // TODO: Calculating bills
         tagihan = ((jumlahJam * biayaSewa) + (totalHari * (upahMakan + upahTransport)));
 
-        // TODO: Get Indonesia currency
         Locale indonesiaLocale = new Locale("id", "ID");
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(indonesiaLocale);
         String biayaSewaRupiah = "BIAYA SEWA PER JAMNYAA: " + currencyFormatter.format(biayaSewa);

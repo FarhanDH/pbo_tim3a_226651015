@@ -20,7 +20,6 @@ public class CostAlatBerat {
                 totalHari = 0;
 
         try {
-            // TODO: Get data from user
             System.out.print("\nmasukkan lokasi: ");
             lokasi = dataIn.readLine().toLowerCase();
             System.out.print("masukkan jenis unit: ");
@@ -30,7 +29,6 @@ public class CostAlatBerat {
             System.out.print("masukkan total hari: ");
             totalHari = Integer.parseInt(dataIn.readLine());
 
-            // TODO: Validate based lokasi & jenisUnit
             if (lokasi.equals("samarinda")) {
                 upahMakan += 50000;
                 upahTransport += 25000;
@@ -63,15 +61,12 @@ public class CostAlatBerat {
                 }
             }
 
-            // TODO: Validate based jumlah jam
             if (jumlahJam <= 200) {
                 jumlahJam = 200;
             }
 
-            // TODO: Calculating bills
             tagihan = ((jumlahJam * biayaSewa) + (totalHari * (upahMakan + upahTransport)));
 
-            // TODO: Get Indonesia currency
             Locale indonesiaLocale = new Locale("id", "ID");
             NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(indonesiaLocale);
             String biayaSewaRupiah = "Biaya Sewa Per Jam: " + currencyFormatter.format(biayaSewa);
@@ -92,7 +87,6 @@ public class CostAlatBerat {
                             totalHari +
                             tagihanRupiah);
         } catch (IOException e) {
-            // TODO: handle exception
             System.out.println("Input Tidak Valid");
         }
     }

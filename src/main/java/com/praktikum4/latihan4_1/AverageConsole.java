@@ -28,7 +28,6 @@ public class AverageConsole {
                 System.out.println("RATA-RATA KAMU: " + result + " 😥 \nBELAJAR YANG BENEEER MAKANYAA!!!! 〴⋋_⋌〵");
             }
         } catch (IOException e) {
-            // TODO: handle exception
             System.out.println("Input Tidak Valid");
         }
     }
