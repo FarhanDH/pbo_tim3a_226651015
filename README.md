@@ -19,21 +19,22 @@ Repositori ini dibuat untuk memahami konsep OOP dalam Java dan mengembangkan ket
 
 ## Struktur Repositori
 
-Perlu diingat bahwa dalam pengembangan repositori ini, saya menggunakan `Maven` sebagai package dan `Visual Studio Code` sebagai *code editor*. Sehingga mohon untuk menyesuaikan arsitektur dari folder/file dengan IDE atau *code editor* yang anda gunakan.
-
 - Direktori `src/main/java/com/` berisi kode sumber Java utama untuk repositori ini.
 - Akan ditemukan berbagai kelas Java yang mengilustrasikan berbagai konsep OOP.
-- Folder `src/main/resources/` bisa digunakan untuk menyimpan sumber daya tambahan seperti file konfigurasi (diabaikan dalam repositori).
-- Direktori lain seperti `src/test/` (pengujian), `target/` (hasil kompilasi), dan `.vscode/` (pengaturan Visual Studio Code) (diabaikan dalam repositori).
 
 ## Cara Menjalankan
 
-Anda dapat menjalankan repositori ini di IDE Java Anda. Pastikan Anda memiliki Java Development Kit (JDK) yang sudah diinstal.
-- Clone repositori ini dengan:
+Kamu dapat menjalankan repositori ini di IDE Java kamu. Pastikan kamu memiliki Java Development Kit (JDK) yang sudah diinstal.
+> [!NOTE]    
+> Pastikan Git sudah terinstal di perangkat kamu!, agar mempermudah melakuan cloning.
+- Jalankan perintah berikut di Terminal atau CMD untuk mengunduh repositori ini:
 
       git clone https://github.com/FarhanDH/pbo_tim3a_226651015.git
+- Masuk ke direktori atau repositori yang sudah diunduh:
+
+      cd pbo_tim3a_226651015
 - Buka Repositori dalam IDE Java Anda (misalnya, Eclipse, IntelliJ IDEA, NetBeans, atau Visual Studio Code (dengan catatan anda menginstal `Extension Pack for Java`)).
-- Kompilasi dan jalankan kode sumber sesuai kebutuhan Anda.
+- Compile dan jalankan source code sesuai kebutuhan kamu,.
 - Eksplorasi dan pelajari berbagai contoh OOP dalam Repositori ini.
 
 <h1 align="center">Selamat Belajar 😉</h1>
