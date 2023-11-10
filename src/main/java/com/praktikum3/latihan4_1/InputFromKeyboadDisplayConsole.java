@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class InputFromKeyboadDisplayConsole {
+    /**
+     * Reads three words from the user and prints them.
+     *
+     * @param args an array of command-line arguments for the application
+     */
     public static void main(String[] args) {
         BufferedReader dataIn = new BufferedReader(new InputStreamReader(
                 System.in));

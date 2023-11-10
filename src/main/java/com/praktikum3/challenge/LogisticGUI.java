@@ -3,6 +3,13 @@ package com.praktikum3.challenge;
 import javax.swing.JOptionPane;
 
 public class LogisticGUI {
+    /**
+     * A function that calculates the cost of shipping based on the weight and
+     * distance.
+     *
+     * @param args the command-line arguments
+     * @return void
+     */
     public static void main(String[] args) {
         int weight;
         int distance;

@@ -3,6 +3,11 @@ package com.praktikum4.latihan4_1;
 import javax.swing.JOptionPane;
 
 public class AverageGUI {
+    /**
+     * A method to calculate and display the average of three user-inputted numbers.
+     *
+     * @param args the command-line arguments
+     */
     public static void main(String[] args) {
         int[] nilaiUser = new int[3];
         double result = 0;

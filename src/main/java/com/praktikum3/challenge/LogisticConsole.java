@@ -5,6 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class LogisticConsole {
+    /**
+     * A function that calculates the cost of shipping based on the weight and
+     * distance.
+     *
+     * @param args the command-line arguments
+     * @return void
+     */
     public static void main(String[] args) {
         BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
 

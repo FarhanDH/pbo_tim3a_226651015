@@ -5,6 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class AverageConsole {
+    /**
+     * Main function that reads three user input values, calculates the average,
+     * and prints a message based on the average value.
+     *
+     * @param args the command-line arguments
+     * @return void
+     */
     public static void main(String[] args) {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
